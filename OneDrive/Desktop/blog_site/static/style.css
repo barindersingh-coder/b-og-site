@@ -1,0 +1,89 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- AUTH PAGES (Login & Signup) ---------- */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTk0NnkzcndxaHVwcGFuNXJzbTlubDBzdWh2dW1tMWR6cHN1eTFzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohjUWoBfRlknMM5Ak/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.auth-form {
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ---------- CREATE POST PAGE ---------- */
+.create-post-page {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    animation: backgroundShift 10s infinite alternate;
+    min-height: 100vh;
+    padding: 40px;
+    color: white;
+}
+
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.create-post-form {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* ---------- HOME PAGE ---------- */
+.home-page {
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.post-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- COMMON FORM ELEMENTS ---------- */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #434190;
+}
