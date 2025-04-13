@@ -4,7 +4,7 @@ services:
     env: python
     buildCommand: pip install -r OneDrive/Desktop/blog_site/requirements.txt
 
-    startCommand: gunicorn app:app
+    startCommand: python run.py
     envVars:
       - key: FLASK_ENV
         value: production
