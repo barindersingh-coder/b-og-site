@@ -2,8 +2,9 @@ services:
   - type: web
     name: blog-site
     env: python
-    buildCommand: pip install -r blog_site/requirements.txt
-    startCommand: gunicorn blog_site.app:app
+    buildCommand: pip install -r OneDrive/Desktop/blog_site/requirements.txt
+
+    startCommand: gunicorn app:app
     envVars:
       - key: FLASK_ENV
         value: production
