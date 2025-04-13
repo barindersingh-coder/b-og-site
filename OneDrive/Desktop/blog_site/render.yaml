@@ -2,9 +2,8 @@ services:
   - type: web
     name: blog-site
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-
+    buildCommand: pip install -r blog_site/requirements.txt
+    startCommand: gunicorn blog_site.app:app
     envVars:
       - key: FLASK_ENV
         value: production
